@@ -1,0 +1,69 @@
+@import url('init.less');
+.accountContent{
+	padding: 25px;
+	>p:first-child{
+		margin:0 25px;
+		padding:0 10px;
+		height: 40px;
+		line-height: 40px;
+		background-color: #f2f2f2;
+		font-size: 13px;
+		color:#333;
+		.after;
+		// border-radius: 3px;
+		>span:first-child{
+			// width: 350px;
+			padding-left:40px;
+			float: left;
+			text-align: center;
+		}
+		>span:last-child{
+			// width:120px;
+			padding-right: 40px;
+			float:right;
+			text-align: center;
+		}
+	}
+	ul{
+		margin:0;
+		padding:0 25px;
+		>a{
+			li{
+				padding:20px 10px;
+				border-bottom:1px solid #efefef;
+				color:#333;
+				font-size: 14px;
+				.after;
+				>span:first-child{
+					.ellipsis;
+					float: left;
+				}
+				>span:last-child{
+					font-size: 13px;
+					float: right;
+				}
+			}
+			.message_li{
+				.read_style{
+					color:#aaa;
+				}
+				.unread_style{
+					color:#0099ff;
+				}
+				.unread_style_line{
+					color:#0099ff;
+					text-decoration:underline;
+				}
+			}
+			.font_underline{
+				color:#005CD9;
+				text-decoration:underline;
+			}
+		}
+		>a:last-child{
+			li{
+				border-bottom:none;
+			}
+		}
+	}
+}
